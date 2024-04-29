@@ -1,7 +1,7 @@
 KEYWORD = ['BTC', 'ETH', '比特', '以太', 'Bitcoin', 'Ether']
 
 NEWS = {
-    'PortalCripto':'',
+    'PortalCripto':'https://portalcripto.com.br/zh-TW/ultimas-noticias/bitcoin/',
     '區塊客':'',
     'Tradingview':'',
     'CoinDesk':'',
