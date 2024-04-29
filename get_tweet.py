@@ -98,5 +98,5 @@ def write_to_json(records:list, user:str):
     return
 
 if __name__ == "__main__":
-    username = "VitalikButerin"
+    username = "cz_binance"
     elon_tweets = get_tweets(username)

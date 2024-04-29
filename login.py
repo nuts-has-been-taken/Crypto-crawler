@@ -11,7 +11,7 @@ def login(driver:webdriver.Chrome):
 
     driver.get("https://twitter.com/login")
 
-    time.sleep(2)
+    time.sleep(5)
 
     # 找到輸入框
     inputs = driver.find_elements(by=By.CSS_SELECTOR, value="input[type='text']")
