@@ -2,6 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
+def save_record(records:list, name:str):
+    with open(f'./{name}.json', 'w', encoding='utf-8') as json_file:
+        json.dump(records, json_file, ensure_ascii=False, indent=4)
+    return
+
 def pc_crawler():
     records=[]
     for page_number in range(1,61):
@@ -29,10 +34,41 @@ def pc_crawler():
             }
             records.append(record)
 
-    with open(f'./pc.json', 'w', encoding='utf-8') as json_file:
-        json.dump(records, json_file, ensure_ascii=False, indent=4)
+    save_record(records, "pc")
+
+    return
+
+def bc_crawler():
+    records=[]
+    for page_number in range(1,21):
+        # 解析頁面新聞列表
+        base_url = f"https://blockcast.it/category/news/reports/page/{page_number}/"
+        pc_news = requests.get(base_url)
+        soup = BeautifulSoup(pc_news.content, "html.parser")
+        news_list = soup.find("div", class_="jeg_posts jeg_load_more_flag")
+        news = news_list.find_all("article")
+        for page in news:
+            # 取得每篇文章 link
+            href = page.find("a").get("href")
+            origin_news = requests.get(href)
+            # 取得文章內容
+            soup = BeautifulSoup(origin_news.content, "html.parser")
+            # 取得文章日期
+            date_time = soup.find("div", class_="jeg_meta_date").text.strip()
+            contents = soup.find("div", class_="content-inner").find_all("p")[:-1]
+            content = ""
+            for text in contents:
+                content += text.get_text()
+            record = {
+                "time":date_time,
+                "content":content
+            }
+            records.append(record)
+
+    save_record(records, "bc")
 
     return
 
 if __name__ == "__main__":
-    pc_crawler()
+    # pc_crawler()
+    bc_crawler()
