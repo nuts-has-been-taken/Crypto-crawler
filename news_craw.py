@@ -72,7 +72,7 @@ def bc_crawler():
 
 def cd_crawler():
     records=[]
-    for page_number in range(1,101):
+    for page_number in range(1,651):
         # 解析頁面新聞列表
         base_url = f"https://www.coindesk.com/tag/bitcoin/{page_number}/"
         pc_news = requests.get(base_url)
@@ -106,7 +106,7 @@ def cd_crawler():
 
 def cs_crawler():
     records=[]
-    for page_number in range(1,161):
+    for page_number in range(1,1251):
         # 解析頁面新聞列表
         base_url = f"https://cryptoslate.com/news/page/{page_number}/"
         pc_news = requests.get(base_url)
@@ -143,5 +143,5 @@ def cs_crawler():
 if __name__ == "__main__":
     # pc_crawler()
     # bc_crawler()
-    # cd_crawler()
+    cd_crawler()
     cs_crawler()
