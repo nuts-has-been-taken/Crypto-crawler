@@ -1,0 +1,157 @@
+[
+    {
+        "date":"2023-11-14",
+        "tweet_text":"\"#Bitcoin is not a good store of value\", because it's too volatile.\n",
+        "repost_text":"Gold is Dead Money. #Bitcoin"
+    },
+    {
+        "date":"2023-11-14",
+        "tweet_text":"Bitcoin is the greatest business model ever invented. \n\nThe amount of value created, to the creator (although I assume he would never move\/use those coins), to the miners, to other industry participants, and to holders. ",
+        "repost_text":"BREAKING \n \nTHE BITCOIN MINING REVENUE HITS RECORD $44 MILLION IN A SINGLE DAY"
+    },
+    {
+        "date":"2023-11-13",
+        "tweet_text":"This is probably based on only on-chain data. \n\nBut please don't FOMO. \n\n---\n\nOver 60,000 Bitcoin millionaires emerge in 2023, 3x more since January",
+        "repost_text":null
+    },
+    {
+        "date":"2023-11-11",
+        "tweet_text":"2 years ago today, #Bitcoin was at ATH (all time high) of $69,000. ",
+        "repost_text":null
+    },
+    {
+        "date":"2023-11-08",
+        "tweet_text":"#Binance is now your one app for all things Web3.  \n\nOur new Web3 Wallet lets you connect DeFi to CeFi in one click.  \n\nTry it and let us know what you think.  \n\nhttps:\/\/binance.onelink.me\/y874\/6q66dfku?af_force_deeplink=true\u2026",
+        "repost_text":null
+    },
+    {
+        "date":"2023-10-23",
+        "tweet_text":"Is it Uptober?\n\nCatch the wave on #Binance!\n\nTrade $50 of #Bitcoin or your other favourite coins on spot to win a share of 5,000 $USDT in token vouchers.\n\nStart here  https:\/\/binance.com\/en\/support\/announcement\/01c2871b7138476d8adbdc7cf539edfe?ref=AZTKZ9XS&utm_source=BinanceTwitter&utm_medium=GlobalSocial&utm_campaign=GlobalSocial\u2026",
+        "repost_text":null
+    },
+    {
+        "date":"2023-10-18",
+        "tweet_text":"Bitcoin's evolution: 1st halving $12, 2nd halving $648, 3rd halving $8,572. The 4th halving is in 6 months  #Bitcoin",
+        "repost_text":null
+    },
+    {
+        "date":"2023-10-08",
+        "tweet_text":"#Binance added the #bitcoin halving countdown to our homepage.\n\nAnd here are my thoughts around the Bitcoin Halvings...",
+        "repost_text":null
+    },
+    {
+        "date":"2023-10-04",
+        "tweet_text":"Take the stress out of trading with the Spot DCA Bot on #Binance\n\nBenefit from volatility by automating your buys at low prices, and selling at predetermined points.\n\nTry it today  https:\/\/app.binance.com\/en\/trading-bots\/spot\/dca-bot\/BTCUSDT?ref=AZTKZ9XS&utm_source=BinanceTwitter&utm_medium=GlobalSocial&utm_campaign=GlobalSocial\u2026",
+        "repost_text":null
+    },
+    {
+        "date":"2023-09-29",
+        "tweet_text":"Root cause identified, some new code caused it. Need to revert and fix data.\n\nEngineers say 1hr ETA for fix. So, expect 2hr or so. ",
+        "repost_text":"Futures Kline (chart) display issue on BTCUSDT. The UI aggregated Kline has issue, the raw Kline via api is working fine.\n\nTrading not affected.\n\nTeam is fixing."
+    },
+    {
+        "date":"2023-09-29",
+        "tweet_text":"Futures Kline (chart) display issue on BTCUSDT. The UI aggregated Kline has issue, the raw Kline via api is working fine.\n\nTrading not affected.\n\nTeam is fixing.",
+        "repost_text":null
+    },
+    {
+        "date":"2023-09-29",
+        "tweet_text":"Raw Kline is fine: https:\/\/fapi.binance.com\/fapi\/v1\/klines?symbol=BTCUSDT&limit=500&interval=5m\u2026",
+        "repost_text":null
+    },
+    {
+        "date":"2023-09-29",
+        "tweet_text":"UI composite Kline has issue: https:\/\/fapi.binance.com\/fapi\/v1\/continuousKlines?pair=BTCUSDT&contractType=PERPETUAL&interval=1m&limit=1000\u2026",
+        "repost_text":null
+    },
+    {
+        "date":"2023-09-25",
+        "tweet_text":"The strength of your hand, is determined during a dip.",
+        "repost_text":"MicroStrategy has acquired an additional 5,445 BTC for ~$147.3 million at an average price of $27,053 per #bitcoin. As of 9\/24\/23 @MicroStrategy hodls 158,245 $BTC acquired for ~$4.68 billion at an average price of $29,582 per bitcoin. $MSTR https:\/\/microstrategy.com\/en\/investor-relations\/financial-documents\/microstrategy-acquires-additional-5445-bitcoins-and-now-holds-158245-btc_9-25-2023\u2026"
+    },
+    {
+        "date":"2023-09-12",
+        "tweet_text":"De 888 ETH \u00e0 0,63 ETH.\n\nLe co\u00fbt d'un nouvel iPhone au cours des 8 derni\u00e8res ann\u00e9es.\n\nCliquez sur le bouton like pour voir ce qui se passe   #AppleEvent",
+        "repost_text":null
+    },
+    {
+        "date":"2023-09-12",
+        "tweet_text":"Shoutout to @JoeSquawk for putting #Bitcoin price in perspective and clearly being fed up with anyone who ignores that \u201cit\u2019s outperformed every asset on the 1 year, 5 year, and 10 year.\u201d",
+        "repost_text":null
+    },
+    {
+        "date":"2023-09-12",
+        "tweet_text":"Need a \"to scale\" version of this image. @CoinMarketCap ? ",
+        "repost_text":"Are you buying the new iPhone 15? \n\nCheck out how the price of iPhone has evolved in Bitcoin over the years! #AppleEvent"
+    },
+    {
+        "date":"2023-09-02",
+        "tweet_text":"Bitcoin is traceable.\n\nCash is not.\n\n",
+        "repost_text":null
+    },
+    {
+        "date":"2023-08-25",
+        "tweet_text":"DeFi taking over. ",
+        "repost_text":null
+    },
+    {
+        "date":"2023-08-24",
+        "tweet_text":"There's been a lot of misinformation regarding potential cascading effects from BNB liquidation on @VenusProtocol , which have \"allegedly\" prompted @binance to market dump #BTC to defend #BNB price.\n\nThis threadis to explore the fundamental soundness of such allegations.\n\n#FUD",
+        "repost_text":null
+    },
+    {
+        "date":"2023-08-18",
+        "tweet_text":"4 ... years ago, we were thrilled to see #BTC finally climb back to $10,000 again. And then it dropped for a bit. I got a few \"comments\" for the tweet below , for a while... \n\nZoom out.",
+        "repost_text":null
+    },
+    {
+        "date":"2023-08-11",
+        "tweet_text":"Self custody wallets are not without risks.\n\nI am supportive of self custody, IF you know what you are doing.\n\nStay #SAFU!",
+        "repost_text":"If you generated a wallet using Libbitcoin's Bitcoin Explorer, including as described in the appendix to Mastering Bitcoin, your funds are at risk (or already stolen).\n\nFull details: https:\/\/milksad.info"
+    },
+    {
+        "date":"2023-08-10",
+        "tweet_text":"JUST IN: All the top 15 best performing equity ETFs this year are #Bitcoin and crypto related.",
+        "repost_text":null
+    },
+    {
+        "date":"2023-08-02",
+        "tweet_text":"I want to share this (luckily) unsuccessful, but very clever and close scam incident from yesterday .  Saved $20m. Hope it may also save you one day.\n\nThe scammers are so good now they generate addresses with the same starting and ending letters, which is what most people check\u2026",
+        "repost_text":"\u4e00\u4e2a#ZeroTransfer\u9a97\u5b50\u4ece0x4071...9Cbc\u9a97\u8d70\u4e862000\u4e07\u7f8e\u5143USDT\u3002\n\u6b63\u5e38\u63a5\u6536\u5730\u5740\uff1a0xa7B4BAC8f0f9692e56750aEFB5f6cB5516E90570\n\u7f51\u7edc\u9493\u9c7c\u5730\u5740\uff1a0xa7Bf48749D2E4aA29e3209879956b9bAa9E90570\n#Tether $USDT\u5df2\u7ecf\u5c06\u9a97\u5b50\u7684\u5730\u57400xa7bf...0570\u6dfb\u52a0\u5230\u9ed1\u540d\u5355\u4e2d\u3002\nhttps:\/\/etherscan.io\/tx\/0x2675aaf5db84f9f966c431ff82f2173d3251020b11b4939b4961ebedf92c78dd\u2026\n#BTC #ETH #USDT #\u5e01\u5b89"
+    },
+    {
+        "date":"2023-07-31",
+        "tweet_text":"CEX price feed saves DeFi. \n\nBinance users are not affected. Our team checked on the Vyper Reentrant Vulnerability. We only use version 0.3.7 or above. \n\nIt's important to stay up-to-date with code libraries, apps and OS. And stay #SAFU ",
+        "repost_text":"\n\nIf #ChainLink team listened to Chris Blec, the whole Curve protocol would be at ZERO right now.\n\nChainLink price feed includes CEXes.\n\nCRV hit $0.086c DEX, but was $0.60c CEX.\n\n#LINK team have a multi-sig for now, and plan to decentralize when the Bug-Eaters take over"
+    },
+    {
+        "date":"2023-07-30",
+        "tweet_text":"On this 8th birthday of #Ethereum, a little throw back to May 2, 2015, in Tokyo, just before #ETH was officially born. \n\n@VitalikButerin stayed in my apartment in Tokyo during this trip. He was already working on and talking about ETH non-stop. And I still missed (didn't buy)\u2026",
+        "repost_text":null
+    },
+    {
+        "date":"2023-07-30",
+        "tweet_text":"Happy Birthday #Ethereum! @VitalikButerin \n\nAmong many things, Ethereum made ICOs possible, which in turn, made many other projects possible, including Binance. ",
+        "repost_text":null
+    },
+    {
+        "date":"2023-07-27",
+        "tweet_text":"Q2 BNB Chain report:\n\n\"BNB Chain Dominates Q2 with an average market share of 46.5% for total Verified Smart Contracts, Ethereum Follows at 31.3%\"\n\nKeep building.",
+        "repost_text":null
+    },
+    {
+        "date":"2023-07-26",
+        "tweet_text":"Bitcoin is more stable than stable coins now\u2026 ",
+        "repost_text":null
+    },
+    {
+        "date":"2023-07-20",
+        "tweet_text":"They say usually, faster is better. ",
+        "repost_text":"Using your feedback, #Binance has now reduced the min. number of blocks for crediting of deposits on the Ethereum, Arbitrum & Optimism networks.\n\nETH:\n 12 to 6 blocks\n Times down from ~25 mins to ~13 mins\n\nARB & OP:\n 100 to 1 block\n Times down from ~7 mins to ~1 min"
+    },
+    {
+        "date":"2023-07-14",
+        "tweet_text":"Celebrating 6 Years of @binance \n\nCongratulations @cz_binance and thank you for always being there for #Crypto Community \n#Binance #BinanceTurns6 #Bitcoin",
+        "repost_text":null
+    }
+]

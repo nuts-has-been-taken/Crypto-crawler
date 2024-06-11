@@ -1,0 +1,367 @@
+[
+    {
+        "date":"2024-04-15",
+        "tweet_text":"Privacy is normal.\n\nRailgun uses the privacy pools protocol ( https:\/\/papers.ssrn.com\/sol3\/papers.cfm?abstract_id=4563364\u2026 ) which makes it much harder for bad actors to join the pool without compromising users' privacy.",
+        "repost_text":"Vitalik Buterin (vitalik.eth) transferred 100 ETH (approximately $325,000) to Railgun at 17:40 UTC+8 today. Railgun is a EVM privacy protocol that enables DeFi private transactions. Over the past six months, Vitalik Buterin has been interacting with the Railgun using small\u2026"
+    },
+    {
+        "date":"2024-04-01",
+        "tweet_text":"A quick note on next steps in Ethereum protocol simplification and node resource load decreases (aka \"the Purge\"):",
+        "repost_text":null
+    },
+    {
+        "date":"2024-03-28",
+        "tweet_text":"Fortunately, the Ethereum ecosystem is already rising to the challenge.",
+        "repost_text":null
+    },
+    {
+        "date":"2024-03-28",
+        "tweet_text":"Going beyond scaling, applications that are built today need to be built with \"2020s Ethereum\" in mind. Here's what this means:",
+        "repost_text":null
+    },
+    {
+        "date":"2024-03-28",
+        "tweet_text":"For a long time, the Ethereum ecosystem has been content to develop applications for a relatively small bubble, and high fees were a good reason why we could not go further. Today, no longer. And so, we no longer have an excuse.",
+        "repost_text":null
+    },
+    {
+        "date":"2024-03-28",
+        "tweet_text":"It has been well-understood for years that the future of Ethereum scaling depends on rollups backed by data space secured with data availability sampling. EIP-4844 is a key change that lays the groundwork for this future.",
+        "repost_text":null
+    },
+    {
+        "date":"2024-03-28",
+        "tweet_text":"Ethereum has blobs. Where do we go from here?",
+        "repost_text":null
+    },
+    {
+        "date":"2024-03-21",
+        "tweet_text":"Are you ready for ETHTaipei?\nJoin us on the exciting opening keynote by @VitalikButerin  \n\nExplore our agenda for insightful talks: https:\/\/ethtaipei.org\/agenda#info \n\nLive streams kick off at 10 a.m. UTC+8.\nBuilding F: https:\/\/youtube.com\/live\/Sch2xILLYgk\u2026,\nBuilding M:",
+        "repost_text":null
+    },
+    {
+        "date":"2024-03-03",
+        "tweet_text":"Polymarket is predicting that blobs (~125 kB) will cost ~0.001 ETH.\n\nToday, 125 kB calldata costs ~30 gwei per gas * 16 gas per byte * 125000 gas ~= 0.06 ETH\n\nAnd if you think polymarket's guess that blobs will be 60x cheaper is over-optimistic, you can use the market to hedge!",
+        "repost_text":null
+    },
+    {
+        "date":"2024-01-11",
+        "tweet_text":"Over $100m distributed in @Optimism RetroPGF round 3.\n\nReally impressed to see their ongoing commitment to funding public goods, helping devs and others contribute to Ethereum even if they lack a business model.\n\nHope to see more projects doing QF and RPGF rounds in the future!",
+        "repost_text":null
+    },
+    {
+        "date":"2024-01-10",
+        "tweet_text":" The 11th Ethereum Foundation Research Reddit AMA is starting in 30 minutes, at 1PM UTC today!\n\nJoin the conversation and get your questions answered!\n\n\n#Ethereum #EFResearch #AMA",
+        "repost_text":null
+    },
+    {
+        "date":"2023-12-28",
+        "tweet_text":"Make Ethereum cypherpunk again",
+        "repost_text":null
+    },
+    {
+        "date":"2023-09-30",
+        "tweet_text":"Should Ethereum be okay with enshrining more things in the protocol?",
+        "repost_text":null
+    },
+    {
+        "date":"2023-05-21",
+        "tweet_text":"Don't overload Ethereum's consensus:\n\nhttps:\/\/vitalik.ca\/general\/2023\/05\/21\/dont_overload.html\u2026",
+        "repost_text":null
+    },
+    {
+        "date":"2023-03-31",
+        "tweet_text":"How will Ethereum's multi-client philosophy interact with ZK-EVMs?",
+        "repost_text":null
+    },
+    {
+        "date":"2023-01-25",
+        "tweet_text":"Check out @VitalikButerin's post in the Reflexer Forum on how RAI-like systems might safely support staked ETH",
+        "repost_text":null
+    },
+    {
+        "date":"2022-12-29",
+        "tweet_text":"As the year of the Merge ends, we wanted to share updates from many of the Ethereum gardeners and EF-supported teams that achieved long sought accomplishments, both big and small, alongside the rest of the ecosystem in 2022.\n\nRead more, and enjoy(!):",
+        "repost_text":null
+    },
+    {
+        "date":"2022-12-05",
+        "tweet_text":"What in the Ethereum application ecosystem excites me",
+        "repost_text":null
+    },
+    {
+        "date":"2022-11-28",
+        "tweet_text":"To make it crystal clear: WETH is a very simple smart contract - think of it like an adapter. You will ALWAYS be able to convert ETH into WETH and WETH into ETH at a 1:1 rate without any risks. This will be true as long as Ethereum exists.",
+        "repost_text":null
+    },
+    {
+        "date":"2022-11-27",
+        "tweet_text":"A lot of people making jokes about WETH.\n\nPlease be aware it may not be obvious to outsiders that it's completely different from bridged assets and there is literally almost zero risk. I think it would be better to mark these more clearly as jokes.",
+        "repost_text":null
+    },
+    {
+        "date":"2022-11-25",
+        "tweet_text":"As part of our ongoing commitment to transparency, we have provided new updates on #Binance\u2019s Proof of Reserves. \n\nFurther updates for $ETH, $USDT, $USDC, #BUSD & #BNB will be coming in the near future.\n\nStay tuned.",
+        "repost_text":null
+    },
+    {
+        "date":"2022-11-24",
+        "tweet_text":"Thread summarizing amazing progress on EIP-4844 (proto-danksharding).\n\nThis is a crucial first step to massively lower fees on L2, helping to make it affordable for much larger numbers of users to directly use on-chain applications instead of relying on cefi intermediaries.",
+        "repost_text":"Ethereum core devs have a call coming up this Thursday to discuss getting EIP-4844 to be considered for inclusion (CFI).\n\nThis is a huge moment for the many teams that have been working on getting this EIP to production this year!\n\nHere is why I think it's time for CFI "
+    },
+    {
+        "date":"2022-11-16",
+        "tweet_text":"Now commencing phase one of the Bring-Your-Own-Data Revolution \n\nIntroducing SSX - Self-Sovereign Anything - now the easiest way to install Sign-In with Ethereum, enable DAO Login, and more.\n\nhttps:\/\/blog.spruceid.com\/announcing-ssx\/\n\n(1\/7)",
+        "repost_text":null
+    },
+    {
+        "date":"2022-11-15",
+        "tweet_text":"Fascinating thread.\n\n(Not dunking. Ethereum too will have to work hard to get widespread adoption of L2s for in-person payments. Getting the UX right is very much not an easy problem, and we should learn from existing experiments)",
+        "repost_text":"I was the first person to pay in #Bitcoin at my hotel in El Salvador.\nIt's in bloody El Zonte."
+    },
+    {
+        "date":"2022-11-09",
+        "tweet_text":"Social Applied ZK projects on Ethereum:\n\n- Unirep\n- Semaphore\n- @heyanonxyz\n- Interep\n- MACI\n- @Sismo_eth \n- zkPIN\n- zk-email \n- zkSBTs\n- iden3 \n\nI know I am missing many more. Comment the projects below.",
+        "repost_text":null
+    },
+    {
+        "date":"2022-11-09",
+        "tweet_text":"Good luck to the @solana community out there\n\nI hope this is your $80 $ETH moment. \n\nA strong and committed community is waiting on the other side of this",
+        "repost_text":null
+    },
+    {
+        "date":"2022-11-08",
+        "tweet_text":"Amazing to see more and more companies in the Ethereum ecosystem contributing and building infrastructure!\n\nGreat work by @a16zcrypto",
+        "repost_text":"Today we're announcing Helios, a fast, portable, and secure Ethereum light client written in Rust.\n\nHelios syncs in two seconds, uses no storage, and provides trustless access to Ethereum.\n\nCode: https:\/\/github.com\/a16z\/helios\n\nPost: http:\/\/a16zcrypto.com\/building-helios-ethereum-light-client\u2026\n\n1\/8"
+    },
+    {
+        "date":"2022-11-05",
+        "tweet_text":"Withdrawals from ZK-EVMs can sometimes be done with lower latency than proof generation, because you can prove specific claims:\n\n* past state X is valid\n* no txs from account A after X, therefore \n* you can still withdraw coins you had in state X\n\nFascinating work by @taikoxyz!",
+        "repost_text":"At @taikoxyz, it is our view that proof generation time is not the most important thing to currently optimize for, and we trade off faster proof gen. in favour of a maximally Ethereum-equivalent ZK-Rollup.\n\nThere's a recent idea that may make this belief hold even stronger "
+    },
+    {
+        "date":"2022-11-05",
+        "tweet_text":"The more complicated stuff (you had 10 ETH in state X, txdata shows you spent only 9 ETH after that, therefore...) seems tricky; it's not very account abstraction friendly. But the simple \"you can withdraw immediately if you made NO txs for a while\" idea is still really powerful!",
+        "repost_text":null
+    },
+    {
+        "date":"2022-10-31",
+        "tweet_text":"Nikolai was one of the earliest community members I came across in my journey into Ethereum and a key reason I stayed.\n\nHis passionate eccentricity helped show not only that ideas like stablecoins were possible, but that they could be brought to life (@MakerDAO).\n\nRIP Nikolai ",
+        "repost_text":null
+    },
+    {
+        "date":"2022-10-26",
+        "tweet_text":"NEW EPISODE\nJoin @tw_tter as she chats to @VitalikButerin at  @EFDevcon 6 in  about: \nthe state of the network\nif the looming centralization is a threat\n#Ethereum's danksharding plus third party layer 2s \nHow much of an issue MEV is\n\nhttps:\/\/epicenter.tv\/episodes\/467",
+        "repost_text":null
+    },
+    {
+        "date":"2022-10-26",
+        "tweet_text":"I'm so happy that Ethereum has such a strong culture of trying hard to make all our moon math as understandable and accessible to people as possible.",
+        "repost_text":"Polynomial commitment schemes are critical to Ethereum\u2019s scaling solutions. \n\nThese schemes will be used in Danksharding, as well as in the proof systems behind Scroll. What are polynomial commitment schemes? And how will they help scale Ethereum?\n\n https:\/\/scroll.io\/blog\/kzg"
+    },
+    {
+        "date":"2022-09-17",
+        "tweet_text":"Thread by @davidgerard, criticizing @VitalikButerin.",
+        "repost_text":"being asked about Vitalik Buterin's essays on the fabulous future of society, powered by Ethereum\n\nso it's not worth treating Buterin's essays as saying anything useful"
+    },
+    {
+        "date":"2022-09-15",
+        "tweet_text":"Congratulations to the Ethereum Team, @VitalikButerin and everyone who worked on the merge to proof of stake last night! This move will reduce worldwide electricity consumption by more than .2%!",
+        "repost_text":null
+    },
+    {
+        "date":"2022-09-15",
+        "tweet_text":"And we finalized!\n\nHappy merge all. This is a big moment for the Ethereum ecosystem. Everyone who helped make the merge happen should feel very proud today.",
+        "repost_text":null
+    },
+    {
+        "date":"2022-09-10",
+        "tweet_text":"Ethereum creator @VitalikButerin joined the Kyiv Tech Summit to provide his support to hackers on the ground floor building the humanitarian tools of tomorrow.\n\nHe also spoke on a panel with @abornyakov about the future of Web3 in Ukraine.",
+        "repost_text":null
+    },
+    {
+        "date":"2022-09-05",
+        "tweet_text":"Which non-Ethereum cryptocurrency do I respect the most?\n\n(If \"none\", interpret as \"disrespect the least\")",
+        "repost_text":null
+    },
+    {
+        "date":"2022-09-01",
+        "tweet_text":"Best wishes to ETHWarsaw hackers!",
+        "repost_text":"Okay, it's a thread \n\n\"Dzie\u0144 dobry ETHWarsaw! I'm sorry I can't come to your event (...) and thank you for all that you're doing\" - @VitalikButerin with a special address to @ETHWarsaw attendees "
+    },
+    {
+        "date":"2022-08-24",
+        "tweet_text":"The non-profit foundation behind the Ethereum blockchain is quadrupling the rewards it will pay to friendly hackers who uncover bugs in the code of its much ballyhooed software upgrade to as much as $1 million",
+        "repost_text":null
+    },
+    {
+        "date":"2022-08-17",
+        "tweet_text":"Glad to see Ethereum people pushing against regulations that privilege ETH over other legitimate cryptocurrencies.\n\n(I have not dug into the details of what specifically is going on and to what extent it's a gov thing vs a compliance decision of one business, but either way...)",
+        "repost_text":"Yo wtf\n\n\"You buy $20,000 of Solana (SOL), a restricted cryptocurrency. You\u2019ve now used $20,000 of your $30,000 annual limit. If you want to purchase more crypto, you are limited to buy a maximum of $10,000\"\n\nCanada what is u doing\n\nhttps:\/\/help.newton.co\/hc\/en-us\/articles\/4413904757651\u2026"
+    },
+    {
+        "date":"2022-08-14",
+        "tweet_text":"EDCON is back! you will not want to miss this!! Together with @deUETH on Aug 28th, come to the San Fran, CHASE CENTER. \u201cEthereum a New Era\u201d will be hosting @drakefjustin @VitalikButerin @dannyryan @dankrad @adiasg @AyaMiyagotchi to discuss The Merge",
+        "repost_text":null
+    },
+    {
+        "date":"2022-07-31",
+        "tweet_text":"Why do maximalists keep picking heroes that turn out to be total clowns?",
+        "repost_text":"Noted cypherpunk Michael Saylor on why Ethereum is inherently unethical because its existence violates securities laws which have their basis in the 10 commandments: \n(h\/t @adjtewck)\nhttps:\/\/youtube.com\/clip\/Ugkxt4DSToXV8ECss0KbLtTsPCfRIsm_B43v\u2026"
+    },
+    {
+        "date":"2022-07-25",
+        "tweet_text":"Vyper is quietly continuing to progress and become a better and better Ethereum high-level language.\n\nhttps:\/\/vyper.readthedocs.io\/en\/stable\/\nhttps:\/\/vyper-by-example.org\n\nGreat and hardworking team @vyperlang and many community contributors.",
+        "repost_text":null
+    },
+    {
+        "date":"2022-07-14",
+        "tweet_text":"0. Fun piece of history about this:\n\nthe deposit contract the community used was just the first one to be uploaded w\/ the verified bytecode\n\nas far as I know, no one even knows who deployed it!\n\nIt wasn't \"official\" until the community opted to use it",
+        "repost_text":"If Ethereum is decentralized, why is there one official ETH2 deposit contract? "
+    },
+    {
+        "date":"2022-07-14",
+        "tweet_text":"Experimenting with gitcoin bounties to crowdsource improving my blog. Goal: add dark mode.\n\n(Note: read carefully. The requirements include actually going through the posts and making sure they look good in dark mode, and editing if they don't)",
+        "repost_text":"anyone wanna earn a cool 1 ETH to add dark mode to http:\/\/vitalik.ca ? \n\nhttps:\/\/gitcoin.co\/issue\/29104"
+    },
+    {
+        "date":"2022-07-12",
+        "tweet_text":"It's amazing how some PoW proponents just keep repeating the unmitigated bare-faced lie that PoS includes voting on protocol parameters (it doesn't, just like PoW doesn't) and this so often just goes unchallenged.\n\nNodes reject invalid blocks, in PoS and in PoW. It's not hard.",
+        "repost_text":"Dear Proof of Stakers,\n\nThe fact that you can vote on something to change its properties is proof that it's a security.\n\nLove, Bitcoin"
+    },
+    {
+        "date":"2022-07-07",
+        "tweet_text":" Ethereum Foundation Research AMA is open NOW on Reddit!\n\n#Ethereum #AMA",
+        "repost_text":null
+    },
+    {
+        "date":"2022-06-29",
+        "tweet_text":"Some different approaches for capping the validator set size, to decrease the load of a beacon chain node and make Ethereum more ready for single-slot finality:\n\nhttps:\/\/notes.ethereum.org\/@vbuterin\/validator_set_size_capping\u2026\n\nThanks @drakefjustin @weboftrees for help!",
+        "repost_text":null
+    },
+    {
+        "date":"2022-06-17",
+        "tweet_text":"Freedom has long faced the threat of tyranny.\n\nBut realism saved the day.\n\nScience & technology offer a new solution.\n\nBut social technology leads the way.\n\nWatch the excellent #InnoMinds E6 with @Ethereum co-founder @VitalikButerin on @TaiwanPlusNews.\nhttps:\/\/taiwanplus.com\/originals\/220617003\u2026",
+        "repost_text":null
+    },
+    {
+        "date":"2022-06-08",
+        "tweet_text":"The Ropsten network just merged! \n\nOne of the last testnets until we merge on the #Ethereum mainnet\nhttps:\/\/ropsten.beaconcha.in",
+        "repost_text":null
+    },
+    {
+        "date":"2022-06-04",
+        "tweet_text":"This is your periodic reminder that post-merge, #Ethereum execution clients will not guarantee the availability of all the chain history indefinitely.\n\nPractically, nothing will change in the short term, but consider the invariant broken long term.",
+        "repost_text":null
+    },
+    {
+        "date":"2022-05-29",
+        "tweet_text":"I wrote up a detailed explanation of the 7-block re-org that occurred last week on the beacon chain. It goes over the basics of the PoS Ethereum consensus and shows visually how the re-org happened, and why it is not inherent to the protocol https:\/\/barnabe.substack.com\/p\/pos-ethereum-reorg?sd=fs\u2026",
+        "repost_text":null
+    },
+    {
+        "date":"2022-05-28",
+        "tweet_text":"Fascinating discussion on ethereum's PoS design here (scroll up and down and through quote tweets, lots of good points made)",
+        "repost_text":"I don't think people appreciate how big of an innovation Ethereum's chain-based PoS is"
+    },
+    {
+        "date":"2022-05-27",
+        "tweet_text":"Deep dive on Ethereum's sharding roadmap from @Delphi_Digital. It's very good!",
+        "repost_text":"This is THE definitive deep dive on Ethereum\u2019s ambitious roadmap.\n\nSpecial thanks to @dankrad for your insights and review!\n\nAND we made an exception to open-source this \n\nGive me an hour of your time, and I\u2019ll save you months of work \n\nEnjoy\n\nhttps:\/\/members.delphidigital.io\/reports\/the-hitchhikers-guide-to-ethereum\u2026"
+    },
+    {
+        "date":"2022-05-18",
+        "tweet_text":"1.  hey anon - you should be hyped about the Ethereum Staking CLR round, and you should contribute to it!\n\n- $350K in matching funds\n- 1288 donors so far\n- Demos tech that will help scale CLRs to millions of users\n- 6 days left",
+        "repost_text":null
+    },
+    {
+        "date":"2022-04-26",
+        "tweet_text":"Possibly the biggest attempt at non-token-holder-centric DAO governance so far. Excited to see where this goes.\n\n",
+        "repost_text":"The Optimism Collective will be governed co-equally by two houses:\n\n The Citizens\u2019 House\n The Token House\n\nTogether, they will drive rapid, SUSTAINABLE growth in Optimism, Ethereum, and the new internet."
+    },
+    {
+        "date":"2022-04-18",
+        "tweet_text":"Today we\u2019re publishing the EF report!\n \nThis is a new way to communicate our core values, explain what makes the EF unique, and share information about all of the ways that EF teams contribute to our vision of Ethereum as an Infinite Garden.\n\nRead it here: https:\/\/ethereum.foundation\/report-2022-04.pdf\u2026",
+        "repost_text":null
+    },
+    {
+        "date":"2022-04-13",
+        "tweet_text":"What are some decisions or tradeoffs in Ethereum protocol design that you would want to see explained better?",
+        "repost_text":null
+    },
+    {
+        "date":"2022-04-01",
+        "tweet_text":"In defense of Bitcoin maximalism:\n\nhttps:\/\/vitalik.ca\/general\/2022\/04\/01\/maximalist.html\u2026",
+        "repost_text":null
+    },
+    {
+        "date":"2022-03-29",
+        "tweet_text":"Many technical and practical decisions in early Ethereum land could have turned out very differently.\n\nFor the better, for the worse? It depends on the specific case. Here's a few examples of some roads not taken (yet?):\n\nhttps:\/\/vitalik.ca\/general\/2022\/03\/29\/road.html\u2026",
+        "repost_text":null
+    },
+    {
+        "date":"2022-03-08",
+        "tweet_text":"A quick tutorial on how barycentric evaluation of polynomials works (useful in ZK-SNARK protocols, data availability sampling and many other Ethereum-related use cases):",
+        "repost_text":null
+    },
+    {
+        "date":"2022-02-26",
+        "tweet_text":"Getting some confirmations from a couple sources that it's legit. Deleting my warning for now. But continue to be vigilant, and always be slow and careful when sending irreversible crypto transactions.",
+        "repost_text":"To follow up on @VitalikButerin's tweet, I've confirmed directly with Ukrainian Ambassador @olex_scherba that the addresses are correct and in the control of the Ukrainian govt. Give!!! Defending free and open societies may be the best thing we ever do with our BTC and ETH..."
+    },
+    {
+        "date":"2022-02-24",
+        "tweet_text":"Reminder: Ethereum is neutral, but I am not.",
+        "repost_text":null
+    },
+    {
+        "date":"2022-02-20",
+        "tweet_text":"At @EthereumDenver we hacked together a full data-blob-transaction prototype! (a.k.a. mini-danksharding)\n\nData blobs are the first milestone towards full ethereum sharding, enabling rollups like @optimismPBC to grow 100x in capacity.\n\nHere's a tweet thread about the prototype ",
+        "repost_text":null
+    },
+    {
+        "date":"2022-02-14",
+        "tweet_text":"Had an amazing time chatting with @VitalikButerin about:\n\nEthereum as the base layer for the global economy\nUpcoming merge\nA multi-chain future\nETH vs BTC vs AVAX\nWhy Layer 2s are the way fwd\nAnarcho-tyranny\nCancel culture\n& more :)\n\nInterview just out \nhttps:\/\/bit.ly\/3gHzNnM",
+        "repost_text":null
+    },
+    {
+        "date":"2022-02-09",
+        "tweet_text":"Ethereum community should do more to be friendly to anon contributors.",
+        "repost_text":"Quick and dirty anon building guide: \nhttps:\/\/hackmd.io\/@yBpKEsxORheI8AJoIiZj1Q\/BkHtjA1k9\u2026\n\nIf you are anyone with any clout in the Ethereum community, I highly encourage you to start a separate account."
+    },
+    {
+        "date":"2022-02-09",
+        "tweet_text":"We're excited to announce that Nomic Labs, the team behind @HardhatHQ, is becoming the Nomic Foundation: a non-profit Ethereum public goods organization backed by @Ethereum Foundation, @VitalikButerin, @Coinbase, @a16z, @Consensys, and others.\n\nhttps:\/\/medium.com\/nomic-labs-blog\/introducing-the-nomic-foundation-an-ethereum-public-goods-organization-31012af67df9\u2026\n",
+        "repost_text":null
+    },
+    {
+        "date":"2022-02-04",
+        "tweet_text":"I'm speaking in 10 min!\n\n\u621110\u5206\u949f\u540e\u6f14\u8bb2\uff01",
+        "repost_text":"Interview & AMA with @VitalikButerin in 15 minutes! \nhttp:\/\/live.bilibili.com\/22351743\nEthereum cofounder Vitalik Buterin will join ECN to have an online interview and AMA,  to give us a recap on the development of Ethereum in 2021 and his expectations of the new year."
+    },
+    {
+        "date":"2022-01-25",
+        "tweet_text":"A state-of-research document showing the technical challenges to moving Ethereum to single-slot (~16 seconds) finality, and some paths to solving them:\n\nhttps:\/\/notes.ethereum.org\/@vbuterin\/single_slot_finality\u2026\n\nThanks @dankrad @drakefjustin @ObadiaAlex @hasufl and others for review and discussion!",
+        "repost_text":null
+    },
+    {
+        "date":"2022-01-13",
+        "tweet_text":"Poll for Ethereum community. You wake up in 2035, and 80% of all transactions + savings in the world are in one currency that is not ETH. Which would you prefer it to be?",
+        "repost_text":null
+    },
+    {
+        "date":"2022-01-13",
+        "tweet_text":"Poll for Ethereum community. You wake up in 2035, and 80% of all transactions + savings in the world are in one currency that is not ETH. Which would you prefer it to be?",
+        "repost_text":null
+    },
+    {
+        "date":"2022-01-08",
+        "tweet_text":"Has anyone noticed how at least among some communities Japanese seems to be slowly replacing Latin as the go-to \"cool language\" for names and slogans?\n\n(random example: Ethereum's recent Kintsugi testnet; I was *not* involved in naming that)",
+        "repost_text":null
+    },
+    {
+        "date":"2022-01-03",
+        "tweet_text":"This is the Endgame \u265f\u2656\u265b\u2654\n\nEp. 99 with @VitalikButerin \n\n- How far are we along on #Ethereum\u2019s roadmap?\n- What challenges lie ahead?\n- What about the rise of Alt L1's? \n- Are all L1's converging on the same future?\n\nTune in to the podcast \nhttps:\/\/shows.banklesshq.com\/p\/-99-endgame-vitalik-buterin\u2026",
+        "repost_text":null
+    }
+]
