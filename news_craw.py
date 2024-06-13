@@ -140,8 +140,48 @@ def cs_crawler():
 
     return
 
+def amb_crawler():
+    records = []
+    for page_number in range(1,1676):
+        # 解析頁面新聞列表
+        base_url = f"https://ambcrypto.com/category/new-news/page/{page_number}/"
+        pc_news = requests.get(base_url)
+        soup = BeautifulSoup(pc_news.content, "html.parser")
+        news_list = soup.find("ul", class_="home-posts infinite-content").find_all("li", class_="home-post infinite-post")
+        for page in news_list:
+            # 取得每篇文章 link
+            href = page.find("a").get("href")
+            origin_news = requests.get(href)
+            soup = BeautifulSoup(origin_news.content, "html.parser")
+            # 取得文章日期
+            date_time = soup.find("time", class_="post-date updated")
+            if date_time:
+                date_time = date_time.get("datetime")
+                date_format = "%Y-%m-%d"
+                date_time = datetime.strptime(date_time, date_format)
+                # 取得新聞內容
+                contents = soup.find("div", class_= "single-post-main-middle")
+                if contents:
+                    contents = contents.find_all("p")
+                    content = ""
+                    for text in contents:
+                        content += text.get_text()
+                    record = {
+                        "time":str(date_time),
+                        "content":content
+                    }
+                    records.append(record)
+        if page_number%50==0:
+            print(f"process data: {page_number}")
+    save_record(records, "abm")
+
+    return
+
+        
+
 if __name__ == "__main__":
     # pc_crawler()
     # bc_crawler()
-    cd_crawler()
-    cs_crawler()
+    # cd_crawler()
+    # cs_crawler()
+    amb_crawler()
