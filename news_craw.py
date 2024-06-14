@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+from dateutil import parser
 from datetime import datetime
 import json
 
@@ -177,11 +178,98 @@ def amb_crawler():
 
     return
 
-        
+def tb_crawler():
+    records = []
+    for page_number in range(1,688):
+        # 解析頁面新聞列表
+        body = {
+            "action": "cb_jx_posts_loadmore",
+            "cb_nonce": "0897cb70cf",
+            "query_vars": {
+                "category_name": "bitcoin",
+                "error": "",
+                "m": "",
+                "p": 0,
+                "post_parent": "",
+                "subpost": "",
+                "subpost_id": "",
+                "attachment": "",
+                "attachment_id": 0,
+                "name": "",
+                "pagename": "",
+                "page_id": 0,
+                "second": "",
+                "minute": "",
+                "hour": "",
+                "day": 0,
+                "monthnum": 0,
+                "year": 0,
+                "w": 0,
+                "tag": "",
+                "cat": 87838,
+                "tax_query": {
+                "0": {
+                    "taxonomy": "category",
+                    "terms": [
+                    59784,
+                    78
+                    ],
+                    "operator": "NOT IN"
+                },
+                "relation": "AND"
+                },
+                "ignore_sticky_posts": False,
+                "suppress_filters": False,
+                "cache_results": True,
+                "update_post_term_cache": True,
+                "update_menu_item_cache": False,
+                "lazy_load_term_meta": True,
+                "update_post_meta_cache": True,
+                "post_type": "",
+                "posts_per_page": 8,
+                "nopaging": False,
+                "comments_per_page": "50",
+                "no_found_rows": False,
+                "order": "DESC"
+            },
+            "is_archive": 1,
+            "page": page_number,
+            "queried_object_id": 87838
+            }
+        base_url = f"https://cryptobriefing.com/wp-admin/admin-ajax.php"
+        tb_news = requests.post(base_url, data=body)
+        soup = BeautifulSoup(tb_news.json()['html'], "html.parser")
+        news_list = soup.find_all("li", class_="main-news-item")
+        for news in news_list:
+            href = news.find("a")['href']
+            origin_news = requests.get(href)
+            soup = BeautifulSoup(origin_news.content, "html.parser")
+            date_time = soup.find("time", class_="timeago")
+            if date_time:
+                date_time = date_time.get("datetime")
+                format_str = "%Y-%m-%d"
+                date_time = parser.parse(date_time).strftime(format_str)
+                contents = soup.find("div", class_= "article-content-wrapper")
+                if contents:
+                    contents = contents.find_all("p")
+                    content = ""
+                    for text in contents:
+                        content += text.get_text()
+                    record = {
+                        "time":date_time,
+                        "content":content
+                    }
+                    records.append(record)
+        if page_number%50==0:
+            print(f"process data: {page_number}")
+    save_record(records, "tb")
+
+    return
 
 if __name__ == "__main__":
     # pc_crawler()
     # bc_crawler()
     # cd_crawler()
     # cs_crawler()
-    amb_crawler()
+    # amb_crawler()
+    tb_crawler()
