@@ -173,7 +173,7 @@ def amb_crawler():
                     records.append(record)
         if page_number%50==0:
             print(f"process data: {page_number}")
-    save_record(records, "abm")
+    save_record(records, "amb")
 
     return
 
