@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 from dateutil import parser
 from datetime import datetime
 import json
+import pytz
 
 def save_record(records:list, name:str):
     with open(f'./{name}.json', 'w', encoding='utf-8') as json_file:
@@ -178,7 +179,7 @@ def amb_crawler():
 
     return
 
-def tb_crawler():
+def cb_crawler():
     records = []
     for page_number in range(1,688):
         # 解析頁面新聞列表
@@ -266,10 +267,44 @@ def tb_crawler():
 
     return
 
+def bm_crawler():
+
+    taipei_tz = pytz.timezone('Asia/Taipei')
+    records = []
+    time_limit = True
+    base_url = "https://data-api.cryptocompare.com/news/v1/article/list?categories=BTC&sortOrder=latest&source_ids=bitcoinmagazine"
+    while time_limit:
+        bm_news = requests.get(base_url)
+        news_list = bm_news.json()["Data"]
+        for news in news_list:
+            ts_id = news["PUBLISHED_ON"]
+            dt_object = datetime.fromtimestamp(ts_id, pytz.utc)
+            taipei_time = str(dt_object.astimezone(taipei_tz))[:-15]
+            sentiment = news["SENTIMENT"]
+            data = {
+                "date":taipei_time
+            }
+            if taipei_time < '2021-08-30':
+                time_limit=False
+                break
+            if sentiment == "NEUTRAL":
+                data['label']="neutral"
+            elif sentiment == "POSITIVE":
+                data['label']="bullish"
+            elif sentiment == "NEGATIVE":
+                data['label']="bearish"
+            print(data)
+            records.append(data)
+        base_url = f"https://data-api.cryptocompare.com/news/v1/article/list?categories=BTC&sortOrder=latest&source_ids=bitcoinmagazine&to_ts={ts_id}"
+    save_record(records, "bm_with_label")
+
+    return
+
 if __name__ == "__main__":
     # pc_crawler()
     # bc_crawler()
     # cd_crawler()
     # cs_crawler()
     # amb_crawler()
-    tb_crawler()
+    # cb_crawler()
+    bm_crawler()
