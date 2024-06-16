@@ -267,15 +267,18 @@ def cb_crawler():
 
     return
 
-def bm_crawler():
+def crypto_compare_crawler(base_url:str, save_name:str):
 
+    # Direct use crypto compare sentiment model
+    origin_url = base_url
     taipei_tz = pytz.timezone('Asia/Taipei')
     records = []
     time_limit = True
-    base_url = "https://data-api.cryptocompare.com/news/v1/article/list?categories=BTC&sortOrder=latest&source_ids=bitcoinmagazine"
     while time_limit:
         bm_news = requests.get(base_url)
         news_list = bm_news.json()["Data"]
+        if news_list == None:
+            break
         for news in news_list:
             ts_id = news["PUBLISHED_ON"]
             dt_object = datetime.fromtimestamp(ts_id, pytz.utc)
@@ -295,10 +298,28 @@ def bm_crawler():
                 data['label']="bearish"
             print(data)
             records.append(data)
-        base_url = f"https://data-api.cryptocompare.com/news/v1/article/list?categories=BTC&sortOrder=latest&source_ids=bitcoinmagazine&to_ts={ts_id}"
-    save_record(records, "bm_with_label")
+        base_url = f"{origin_url}&to_ts={ts_id}"
+    save_record(records, save_name)
+    print("done")
 
     return
+
+CRYPTO_COMPARE_URL = "https://data-api.cryptocompare.com/news/v1/article/list?categories=BTC&sortOrder=latest&source_ids="
+
+def bm_cc_crawler():
+    base_url = f"{CRYPTO_COMPARE_URL}bitcoinmagazine"
+    save_name = "bm_cc_label"
+    crypto_compare_crawler(base_url, save_name)
+
+def cd_cc_crawler():
+    base_url = f"{CRYPTO_COMPARE_URL}coindesk"
+    save_name = "cd_cc_label"
+    crypto_compare_crawler(base_url, save_name)
+
+def cc_cc_crawler():
+    base_url = f"{CRYPTO_COMPARE_URL}cryptocompare"
+    save_name = "cc_cc_label"
+    crypto_compare_crawler(base_url, save_name)
 
 if __name__ == "__main__":
     # pc_crawler()
@@ -307,4 +328,6 @@ if __name__ == "__main__":
     # cs_crawler()
     # amb_crawler()
     # cb_crawler()
-    bm_crawler()
+    # bm_cc_crawler()
+    # cd_cc_crawler()
+    cc_cc_crawler()
