@@ -4,11 +4,71 @@ from dateutil import parser
 from datetime import datetime
 import json
 import pytz
+import time
 
 def save_record(records:list, name:str):
     with open(f'./{name}.json', 'w', encoding='utf-8') as json_file:
         json.dump(records, json_file, ensure_ascii=False, indent=4)
     return
+
+def crypto_compare_crawler(base_url:str, save_name:str):
+
+    # Direct use crypto compare sentiment model
+    origin_url = base_url
+    taipei_tz = pytz.timezone('Asia/Taipei')
+    records = []
+    time_limit = True
+    while time_limit:
+        bm_news = requests.get(base_url)
+        news_list = bm_news.json()["Data"]
+        if news_list == None:
+            break
+        for news in news_list:
+            ts_id = news["PUBLISHED_ON"]
+            dt_object = datetime.fromtimestamp(ts_id, pytz.utc)
+            taipei_time = str(dt_object.astimezone(taipei_tz))[:-15]
+            sentiment = news["SENTIMENT"]
+            data = {
+                "date":taipei_time
+            }
+            if taipei_time < '2021-08-30':
+                time_limit=False
+                break
+            if sentiment == "NEUTRAL":
+                data['label']="neutral"
+            elif sentiment == "POSITIVE":
+                data['label']="bullish"
+            elif sentiment == "NEGATIVE":
+                data['label']="bearish"
+            print(data)
+            records.append(data)
+        base_url = f"{origin_url}&to_ts={ts_id}"
+    save_record(records, save_name)
+    print("done")
+
+    return
+
+CRYPTO_COMPARE_URL = "https://data-api.cryptocompare.com/news/v1/article/list?categories=BTC&sortOrder=latest&source_ids="
+
+def bm_cc_crawler():
+    base_url = f"{CRYPTO_COMPARE_URL}bitcoinmagazine"
+    save_name = "bm_cc_label"
+    crypto_compare_crawler(base_url, save_name)
+
+def cd_cc_crawler():
+    base_url = f"{CRYPTO_COMPARE_URL}coindesk"
+    save_name = "cd_cc_label"
+    crypto_compare_crawler(base_url, save_name)
+
+def cc_cc_crawler():
+    base_url = f"{CRYPTO_COMPARE_URL}cryptocompare"
+    save_name = "cc_cc_label"
+    crypto_compare_crawler(base_url, save_name)
+
+def cp_cc_crawler():
+    base_url = f"{CRYPTO_COMPARE_URL}cryptopotato"
+    save_name = "cp_cc_label"
+    crypto_compare_crawler(base_url, save_name)
 
 def pc_crawler():
     records=[]
@@ -267,67 +327,35 @@ def cb_crawler():
 
     return
 
-def crypto_compare_crawler(base_url:str, save_name:str):
-
-    # Direct use crypto compare sentiment model
-    origin_url = base_url
-    taipei_tz = pytz.timezone('Asia/Taipei')
+def ut_crawler():
     records = []
-    time_limit = True
-    while time_limit:
-        bm_news = requests.get(base_url)
-        news_list = bm_news.json()["Data"]
-        if news_list == None:
-            break
+    for page_number in range(1,112):
+        # 解析頁面新聞列表
+        base_url = f"https://u.today/views/ajax?_wrapper_format=drupal_ajax&view_name=taxonomy_term&view_display_id=page_1&view_args=2462&view_path=%2Ftaxonomy%2Fterm%2F2462&view_base_path=taxonomy%2Fterm%2F%25&view_dom_id=52c67bd16940233b50b68e1d3cd5d7c272940ee2f0f01e7a30a9c20f2caf3d1a&pager_element=0&page={page_number}&_drupal_ajax=1&ajax_page_state%5Btheme%5D=cryptod&ajax_page_state%5Btheme_token%5D=&ajax_page_state%5Blibraries%5D=cryptod%2Fglobal-styling%2Cparagraphs%2Fdrupal.paragraphs.unpublished%2Csystem%2Fbase%2Cviews%2Fviews.module%2Cviews_infinite_scroll%2Fviews-infinite-scroll"
+        ut_news = requests.get(base_url)
+        soup = BeautifulSoup(ut_news.json()[1]['data'], "html.parser")
+        news_list = soup.find_all("div", class_="news__item")
         for news in news_list:
-            ts_id = news["PUBLISHED_ON"]
-            dt_object = datetime.fromtimestamp(ts_id, pytz.utc)
-            taipei_time = str(dt_object.astimezone(taipei_tz))[:-15]
-            sentiment = news["SENTIMENT"]
-            data = {
-                "date":taipei_time
-            }
-            if taipei_time < '2021-08-30':
-                time_limit=False
-                break
-            if sentiment == "NEUTRAL":
-                data['label']="neutral"
-            elif sentiment == "POSITIVE":
-                data['label']="bullish"
-            elif sentiment == "NEGATIVE":
-                data['label']="bearish"
-            print(data)
-            records.append(data)
-        base_url = f"{origin_url}&to_ts={ts_id}"
-    save_record(records, save_name)
-    print("done")
-
+            href = news.find("a")['href']
+            origin_news = requests.get(href)
+            soup = BeautifulSoup(origin_news.content, "html.parser")
+            date_time = soup.find_all("div", class_="humble article__short-humble")[1].text.strip()
+            date_time = datetime.strptime(date_time, "%a, %d/%m/%Y - %H:%M").strftime("%Y-%m-%d")
+            contents = soup.find("div", class_= "article__content")
+            if contents:
+                contents = contents.find_all("p")
+                content = ""
+                for text in contents:
+                    content += text.get_text()
+                record = {
+                    "time":date_time,
+                    "content":content
+                }
+                records.append(record)
+        if page_number%50==0:
+            print(f"process data: {page_number}")
+    save_record(records, "ut")
     return
 
-CRYPTO_COMPARE_URL = "https://data-api.cryptocompare.com/news/v1/article/list?categories=BTC&sortOrder=latest&source_ids="
-
-def bm_cc_crawler():
-    base_url = f"{CRYPTO_COMPARE_URL}bitcoinmagazine"
-    save_name = "bm_cc_label"
-    crypto_compare_crawler(base_url, save_name)
-
-def cd_cc_crawler():
-    base_url = f"{CRYPTO_COMPARE_URL}coindesk"
-    save_name = "cd_cc_label"
-    crypto_compare_crawler(base_url, save_name)
-
-def cc_cc_crawler():
-    base_url = f"{CRYPTO_COMPARE_URL}cryptocompare"
-    save_name = "cc_cc_label"
-    crypto_compare_crawler(base_url, save_name)
-
 if __name__ == "__main__":
-    # pc_crawler()
-    # bc_crawler()
-    # cd_crawler()
-    # cs_crawler()
-    # amb_crawler()
-    # cb_crawler()
-    # bm_cc_crawler()
-    # cd_cc_crawler()
-    cc_cc_crawler()
+    ut_crawler()
