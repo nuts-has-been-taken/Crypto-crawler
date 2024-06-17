@@ -336,7 +336,7 @@ def ut_crawler():
         soup = BeautifulSoup(ut_news.json()[1]['data'], "html.parser")
         news_list = soup.find_all("div", class_="news__item")
         for news in news_list:
-            href = news.find("a")['href']
+            href = news.find("a", class_="news__item-body")['href']
             origin_news = requests.get(href)
             soup = BeautifulSoup(origin_news.content, "html.parser")
             date_time = soup.find_all("div", class_="humble article__short-humble")[1].text.strip()
